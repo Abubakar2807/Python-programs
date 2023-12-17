@@ -1,0 +1,15 @@
+def compare(s,p):
+    l=min(len(s),len(p))
+    cnt=0
+    for i in range(l):
+        if s[i]==p[i]:
+            cnt+=1
+    return cnt
+    
+s1=input("enter the string")
+s2=input("enter the second string")
+mx=max(len(s1),len(s2))
+cnt=compare(s1,s2)
+similarity=cnt/mx*100
+print("the comapr between the 2 string:",cnt)
+print("the similarity between the 2 string:",similarity)
