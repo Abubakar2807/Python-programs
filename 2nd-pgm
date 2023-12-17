@@ -1,0 +1,9 @@
+n=input("enter the number")
+rev=n
+if(rev==rev[::-1]):
+    print("the given number is palindrome")
+else:
+    print("the given number is not palindrome")
+for i in range(9):
+    if(rev.count(str(i))>0):
+        print("the",i,"apperas",rev.count(str(i)),"times")
