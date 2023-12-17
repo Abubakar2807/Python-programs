@@ -1,0 +1,26 @@
+def bin_dec(n1):
+    l=len(n1)
+    dec=0
+    for i in range(l):
+        dec+=int(n1[i])*(2**(l-i-1))
+    return dec
+def cot_hex(n2):
+    l=len(n2)
+    dec=0
+    for i in range(l):
+        dec+=int(n2[i])*(8**(l-i-1))
+    
+    hexa=['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F']
+    oct=' '
+    while dec>0:
+        rem=dec%16
+        oct=hexa[rem]+oct
+        dec=dec//16
+    return oct
+
+n=input("eneter the binary number")
+b=bin_dec(n)
+print("converted biany to decimal:",b)
+n2=input("enter the octal number:")
+o=cot_hex(n2)
+print("converted octal to hexha:",o)
