@@ -1,0 +1,10 @@
+m1=float(input("enter the 1st marks"))
+m2=float(input("enter the 2nd marks"))
+m3=float(input("enter the 3rd marks"))
+if(m1<=m2 and m1<=m3):
+    avg=(m2+m3)/2
+elif(m2<=m1 and m2<=m3):
+    avg=(m1+m3)/2
+else:
+    avg=(m1+m2)/2
+print("the avg of 2 marks:",avg)
