@@ -1,0 +1,15 @@
+n=input("enter the word")
+wrCnt=digCnt=upCnt=loCnt=0
+wrCnt=n.split()
+for ch in n:
+    if ch>='0' and ch<='9':
+        digCnt+=1
+    elif ch>='a' and ch<='z':
+        loCnt+=1
+    elif ch>='A' and ch<='Z':
+        upCnt+=1
+
+print("the word cnt is:",len(wrCnt))
+print("the digit cnt is:",digCnt)
+print("the upper cnt is:",upCnt)
+print("the lower cnt is:",loCnt)
